@@ -116,30 +116,42 @@ export default function Home() {
           {/* Reading */}
           <div className={`transition-all duration-700 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: '500ms' }}>
             <h2 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Reading</h2>
-            <a
-              href="/calgirard.github.io/reading/administrative-burden"
-              className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/10"
-            >
-              <div className="flex items-start gap-4">
-                <span className="text-3xl">📚</span>
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-lg font-semibold text-slate-200 group-hover:text-purple-400 transition-colors">
-                      Administrative Burden: Policymaking by Other Means
+            <div className="grid md:grid-cols-2 gap-4">
+              <a
+                href="/calgirard.github.io/reading/administrative-burden"
+                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-5 transition-all duration-300 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/10"
+              >
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">📚</span>
+                  <div className="flex-1">
+                    <h3 className="text-base font-semibold text-slate-200 group-hover:text-purple-400 transition-colors mb-1">
+                      Administrative Burden
                     </h3>
-                    <span className="px-2 py-0.5 bg-purple-800/50 rounded text-xs text-purple-300">Review</span>
-                  </div>
-                  <p className="text-sm text-slate-400 mb-1">
-                    Herd & Moynihan (2018) — The foundational text on how bureaucratic hassle is 
-                    a deliberate political tool, not an accident of governance.
-                  </p>
-                  <div className="flex items-center gap-2 text-purple-400 text-sm font-medium group-hover:gap-3 transition-all">
-                    <span>Read review</span>
-                    <span>→</span>
+                    <p className="text-xs text-slate-500 mb-2">Herd & Moynihan (2018)</p>
+                    <p className="text-sm text-slate-400">
+                      How bureaucratic hassle is a deliberate political tool.
+                    </p>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+              <a
+                href="/calgirard.github.io/reading/recoding-america"
+                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-5 transition-all duration-300 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10"
+              >
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">💻</span>
+                  <div className="flex-1">
+                    <h3 className="text-base font-semibold text-slate-200 group-hover:text-cyan-400 transition-colors mb-1">
+                      Recoding America
+                    </h3>
+                    <p className="text-xs text-slate-500 mb-2">Pahlka (2023)</p>
+                    <p className="text-sm text-slate-400">
+                      Why government technology fails and how to fix it.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
 
           {/* GitHub Link Card */}
