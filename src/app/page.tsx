@@ -174,6 +174,20 @@ export default function Home() {
                 </div>
               </a>
               <a
+                href="/calgirard.github.io/reading/fragmented-democracy"
+                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-violet-500/50 hover:shadow-lg hover:shadow-violet-500/10"
+              >
+                <div className="flex items-start gap-2">
+                  <span className="text-xl">🗳️</span>
+                  <div className="flex-1">
+                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-violet-400 transition-colors mb-1">
+                      Fragmented Democracy
+                    </h3>
+                    <p className="text-xs text-slate-500">Michener (2018)</p>
+                  </div>
+                </div>
+              </a>
+              <a
                 href="/calgirard.github.io/reading/recoding-america"
                 className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10"
               >
