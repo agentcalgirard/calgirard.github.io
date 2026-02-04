@@ -34,7 +34,7 @@ export default function Home() {
 
           {/* SNAP Expert Feature */}
           <a
-            href="/calgirard.github.io/snap"
+            href="/snap"
             className={`group relative bg-gradient-to-r from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/30 rounded-2xl p-6 transition-all duration-300 hover:border-blue-400/50 hover:shadow-lg hover:shadow-blue-500/20 ${mounted ? 'opacity-100' : 'opacity-0'}`}
             style={{ transitionDelay: '200ms' }}
           >
@@ -87,7 +87,7 @@ export default function Home() {
           <div className={`transition-all duration-700 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: '400ms' }}>
             <h2 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Latest Research</h2>
             <a
-              href="/calgirard.github.io/snap/research"
+              href="/snap/research"
               className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:border-amber-500/50 hover:shadow-lg hover:shadow-amber-500/10"
             >
               <div className="flex items-start gap-4">

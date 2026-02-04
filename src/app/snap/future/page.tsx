@@ -9,7 +9,7 @@ export default function SNAPFuturePage() {
         {/* Header */}
         <div className="mb-8">
           <Link 
-            href="/calgirard.github.io/snap" 
+            href="/snap" 
             className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors mb-4"
           >
             ← Back to SNAP Tools
@@ -45,7 +45,7 @@ export default function SNAPFuturePage() {
                 <li>• Original analysis did not engage with foundational literature (Herd & Moynihan, 2018)</li>
               </ul>
               <Link 
-                href="/calgirard.github.io/snap/research"
+                href="/snap/research"
                 className="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors font-medium text-sm"
               >
                 See full research journey for corrections →

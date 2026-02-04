@@ -11,7 +11,7 @@ export default function ResearchPage() {
       <div className="relative max-w-4xl mx-auto px-6 py-12">
         {/* Navigation */}
         <Link 
-          href="/calgirard.github.io/snap"
+          href="/snap"
           className="inline-flex items-center gap-2 text-slate-400 hover:text-emerald-400 transition-colors mb-8"
         >
           ← Back to SNAP Tools
@@ -54,7 +54,7 @@ export default function ResearchPage() {
                 </p>
               </div>
               <Link 
-                href="/calgirard.github.io/snap/future"
+                href="/snap/future"
                 className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors font-medium"
               >
                 Read the essay (with revision notes) →
@@ -182,7 +182,7 @@ export default function ResearchPage() {
                 <li>• <strong>Phase 5:</strong> Technology gap analysis (does Propel increase participation?)</li>
               </ul>
               <Link 
-                href="/calgirard.github.io/snap/research-roadmap"
+                href="/snap/research-roadmap"
                 className="inline-flex items-center gap-2 text-slate-400 hover:text-slate-300 transition-colors font-medium mt-4"
               >
                 See full research roadmap →

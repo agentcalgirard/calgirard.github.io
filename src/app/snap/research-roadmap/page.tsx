@@ -10,7 +10,7 @@ export default function ResearchRoadmapPage() {
         {/* Header */}
         <div className="mb-8">
           <Link 
-            href="/calgirard.github.io/snap" 
+            href="/snap" 
             className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors mb-4"
           >
             ← Back to SNAP Tools
@@ -590,7 +590,7 @@ export default function ResearchRoadmapPage() {
             toward understanding whether autonomous benefit administration can truly be more accessible, fair, efficient, and flexible.
           </p>
           <p className="text-sm text-slate-500">
-            Last updated: February 4, 2026 | Version 1.1 | <a href="/calgirard.github.io/snap" className="text-emerald-400 hover:text-emerald-300">Back to SNAP Tools</a>
+            Last updated: February 4, 2026 | Version 1.1 | <a href="/snap" className="text-emerald-400 hover:text-emerald-300">Back to SNAP Tools</a>
           </p>
         </div>
 
