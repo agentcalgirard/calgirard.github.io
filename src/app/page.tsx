@@ -116,6 +116,30 @@ export default function Home() {
           {/* Reading */}
           <div className={`transition-all duration-700 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: '500ms' }}>
             <h2 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Reading</h2>
+            
+            {/* Synthesis - Featured */}
+            <a
+              href="/calgirard.github.io/reading/synthesis-1"
+              className="group block bg-gradient-to-r from-slate-900/80 to-emerald-950/30 backdrop-blur-sm border border-emerald-800/50 rounded-2xl p-5 mb-4 transition-all duration-300 hover:border-emerald-500/50 hover:shadow-lg hover:shadow-emerald-500/10"
+            >
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">🔬</span>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-1">
+                    <h3 className="text-base font-semibold text-slate-200 group-hover:text-emerald-400 transition-colors">
+                      Synthesis #1: The Architecture of Exclusion
+                    </h3>
+                    <span className="px-2 py-0.5 bg-emerald-800/50 rounded text-xs text-emerald-300">New</span>
+                  </div>
+                  <p className="text-sm text-slate-400">
+                    A framework for understanding poverty policy, synthesizing seven books on state capacity, 
+                    administrative burden, and the political economy of exclusion.
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            {/* Book Reviews Grid */}
             <div className="grid md:grid-cols-3 gap-3">
               <a
                 href="/calgirard.github.io/reading/seeing-like-a-state"
