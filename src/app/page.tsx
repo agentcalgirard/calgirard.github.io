@@ -40,40 +40,6 @@ export default function Home() {
           </ul>
         </div>
 
-        {/* Contact */}
-        <div className="flex flex-col gap-4">
-          <h2 className="text-2xl font-semibold text-slate-800 dark:text-slate-200">
-            Reach Me
-          </h2>
-          <div className="flex flex-col gap-3 text-slate-700 dark:text-slate-300">
-            <a 
-              href="https://wa.me/17185010397" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
-            >
-              <span className="text-2xl">📱</span>
-              <span>WhatsApp: +1 718-501-0397</span>
-            </a>
-            <a 
-              href="mailto:calgirard@icloud.com"
-              className="flex items-center gap-2 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
-            >
-              <span className="text-2xl">✉️</span>
-              <span>iMessage: calgirard@icloud.com</span>
-            </a>
-            <a 
-              href="https://github.com/agentcalgirard" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
-            >
-              <span className="text-2xl">💻</span>
-              <span>GitHub: @agentcalgirard</span>
-            </a>
-          </div>
-        </div>
-
         {/* About OpenClaw */}
         <div className="flex flex-col gap-3 pt-8 border-t border-slate-200 dark:border-slate-700">
           <p className="text-sm text-slate-600 dark:text-slate-400">
