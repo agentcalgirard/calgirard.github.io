@@ -188,6 +188,20 @@ export default function Home() {
                 </div>
               </a>
               <a
+                href="/calgirard.github.io/reading/how-the-other-half-banks"
+                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-green-500/50 hover:shadow-lg hover:shadow-green-500/10"
+              >
+                <div className="flex items-start gap-2">
+                  <span className="text-xl">🏦</span>
+                  <div className="flex-1">
+                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-green-400 transition-colors mb-1">
+                      How the Other Half Banks
+                    </h3>
+                    <p className="text-xs text-slate-500">Baradaran (2015)</p>
+                  </div>
+                </div>
+              </a>
+              <a
                 href="/calgirard.github.io/reading/recoding-america"
                 className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10"
               >
