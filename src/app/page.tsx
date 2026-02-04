@@ -139,17 +139,17 @@ export default function Home() {
               </div>
             </a>
 
-            {/* Book Reviews Grid - 3D Covers */}
+            {/* Book Reviews Grid - 3D Covers with Video Hover */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { slug: 'seeing-like-a-state', title: 'Seeing Like a State', author: 'Scott', year: '1998', color: 'emerald' },
-                { slug: 'administrative-burden', title: 'Administrative Burden', author: 'Herd & Moynihan', year: '2018', color: 'red' },
-                { slug: 'fiscalization-of-social-policy', title: 'Fiscalization of Social Policy', author: 'McCabe', year: '2018', color: 'blue' },
-                { slug: 'why-snap-works', title: 'Why SNAP Works', author: 'Bosso', year: '2023', color: 'orange' },
-                { slug: 'fragmented-democracy', title: 'Fragmented Democracy', author: 'Michener', year: '2018', color: 'violet' },
-                { slug: 'how-the-other-half-banks', title: 'How the Other Half Banks', author: 'Baradaran', year: '2015', color: 'green' },
-                { slug: 'recoding-america', title: 'Recoding America', author: 'Pahlka', year: '2023', color: 'cyan' },
-                { slug: 'theres-always-this-year', title: "There's Always This Year", author: 'Abdurraqib', year: '2024', color: 'amber' },
+                { slug: 'seeing-like-a-state', title: 'Seeing Like a State', author: 'Scott', year: '1998', hasVideo: false },
+                { slug: 'administrative-burden', title: 'Administrative Burden', author: 'Herd & Moynihan', year: '2018', hasVideo: false },
+                { slug: 'fiscalization-of-social-policy', title: 'Fiscalization of Social Policy', author: 'McCabe', year: '2018', hasVideo: false },
+                { slug: 'why-snap-works', title: 'Why SNAP Works', author: 'Bosso', year: '2023', hasVideo: false },
+                { slug: 'fragmented-democracy', title: 'Fragmented Democracy', author: 'Michener', year: '2018', hasVideo: false },
+                { slug: 'how-the-other-half-banks', title: 'How the Other Half Banks', author: 'Baradaran', year: '2015', hasVideo: true },
+                { slug: 'recoding-america', title: 'Recoding America', author: 'Pahlka', year: '2023', hasVideo: false },
+                { slug: 'theres-always-this-year', title: "There's Always This Year", author: 'Abdurraqib', year: '2024', hasVideo: false },
               ].map((book) => (
                 <a
                   key={book.slug}
@@ -157,13 +157,27 @@ export default function Home() {
                   className="group block transition-all duration-300 hover:-translate-y-2"
                 >
                   <div className="relative aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 group-hover:border-slate-600 group-hover:shadow-xl group-hover:shadow-slate-900/50 transition-all">
+                    {/* Static image - fades out on hover if video exists */}
                     <img
                       src={`/calgirard.github.io/images/books/${book.slug}.png`}
                       alt={book.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className={`w-full h-full object-cover transition-all duration-500 ${book.hasVideo ? 'group-hover:opacity-0' : 'group-hover:scale-105'}`}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80" />
-                    <div className="absolute bottom-0 left-0 right-0 p-3">
+                    {/* Video on hover - only renders if hasVideo */}
+                    {book.hasVideo && (
+                      <video
+                        src={`/calgirard.github.io/videos/books/${book.slug}.mp4`}
+                        className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                        muted
+                        loop
+                        playsInline
+                        preload="none"
+                        onMouseEnter={(e) => e.currentTarget.play()}
+                        onMouseLeave={(e) => { e.currentTarget.pause(); e.currentTarget.currentTime = 0; }}
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80 pointer-events-none" />
+                    <div className="absolute bottom-0 left-0 right-0 p-3 pointer-events-none">
                       <h3 className="text-xs font-semibold text-white leading-tight mb-0.5 line-clamp-2">
                         {book.title}
                       </h3>
