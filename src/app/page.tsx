@@ -116,72 +116,74 @@ export default function Home() {
           {/* Reading */}
           <div className={`transition-all duration-700 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: '500ms' }}>
             <h2 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Reading</h2>
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-3 gap-3">
               <a
                 href="/calgirard.github.io/reading/seeing-like-a-state"
-                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-5 transition-all duration-300 hover:border-amber-500/50 hover:shadow-lg hover:shadow-amber-500/10"
+                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-amber-500/50 hover:shadow-lg hover:shadow-amber-500/10"
               >
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">🗺️</span>
+                <div className="flex items-start gap-2">
+                  <span className="text-xl">🗺️</span>
                   <div className="flex-1">
-                    <h3 className="text-base font-semibold text-slate-200 group-hover:text-amber-400 transition-colors mb-1">
+                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-amber-400 transition-colors mb-1">
                       Seeing Like a State
                     </h3>
-                    <p className="text-xs text-slate-500 mb-2">Scott (1998)</p>
-                    <p className="text-sm text-slate-400">
-                      How state simplification destroys local knowledge.
-                    </p>
+                    <p className="text-xs text-slate-500">Scott (1998)</p>
                   </div>
                 </div>
               </a>
               <a
                 href="/calgirard.github.io/reading/administrative-burden"
-                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-5 transition-all duration-300 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/10"
+                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/10"
               >
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">📚</span>
+                <div className="flex items-start gap-2">
+                  <span className="text-xl">📚</span>
                   <div className="flex-1">
-                    <h3 className="text-base font-semibold text-slate-200 group-hover:text-purple-400 transition-colors mb-1">
+                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-purple-400 transition-colors mb-1">
                       Administrative Burden
                     </h3>
-                    <p className="text-xs text-slate-500 mb-2">Herd & Moynihan (2018)</p>
-                    <p className="text-sm text-slate-400">
-                      How bureaucratic hassle is a political tool.
-                    </p>
+                    <p className="text-xs text-slate-500">Herd & Moynihan (2018)</p>
                   </div>
                 </div>
               </a>
               <a
                 href="/calgirard.github.io/reading/fiscalization-of-social-policy"
-                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-5 transition-all duration-300 hover:border-rose-500/50 hover:shadow-lg hover:shadow-rose-500/10"
+                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-rose-500/50 hover:shadow-lg hover:shadow-rose-500/10"
               >
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">💰</span>
+                <div className="flex items-start gap-2">
+                  <span className="text-xl">💰</span>
                   <div className="flex-1">
-                    <h3 className="text-base font-semibold text-slate-200 group-hover:text-rose-400 transition-colors mb-1">
+                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-rose-400 transition-colors mb-1">
                       Fiscalization of Social Policy
                     </h3>
-                    <p className="text-xs text-slate-500 mb-2">McCabe (2018)</p>
-                    <p className="text-sm text-slate-400">
-                      Why tax credits exclude the poorest families.
-                    </p>
+                    <p className="text-xs text-slate-500">McCabe (2018)</p>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="/calgirard.github.io/reading/why-snap-works"
+                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-orange-500/50 hover:shadow-lg hover:shadow-orange-500/10"
+              >
+                <div className="flex items-start gap-2">
+                  <span className="text-xl">🍎</span>
+                  <div className="flex-1">
+                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-orange-400 transition-colors mb-1">
+                      Why SNAP Works
+                    </h3>
+                    <p className="text-xs text-slate-500">Bosso (2023)</p>
                   </div>
                 </div>
               </a>
               <a
                 href="/calgirard.github.io/reading/recoding-america"
-                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-5 transition-all duration-300 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10"
+                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10"
               >
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">💻</span>
+                <div className="flex items-start gap-2">
+                  <span className="text-xl">💻</span>
                   <div className="flex-1">
-                    <h3 className="text-base font-semibold text-slate-200 group-hover:text-cyan-400 transition-colors mb-1">
+                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-cyan-400 transition-colors mb-1">
                       Recoding America
                     </h3>
-                    <p className="text-xs text-slate-500 mb-2">Pahlka (2023)</p>
-                    <p className="text-sm text-slate-400">
-                      Why government technology fails.
-                    </p>
+                    <p className="text-xs text-slate-500">Pahlka (2023)</p>
                   </div>
                 </div>
               </a>
