@@ -126,29 +126,48 @@ export default function SNAPExpertPage() {
           </div>
         </div>
 
-        {/* Featured Essay */}
-        <Link
-          href="/snap/future"
-          className="mb-8 block group relative bg-gradient-to-r from-purple-900/30 to-blue-900/30 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-6 transition-all duration-300 hover:border-purple-400/50 hover:shadow-lg hover:shadow-purple-500/20"
-        >
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity" />
-          <div className="relative flex items-start gap-4">
-            <span className="text-5xl">🔮</span>
-            <div className="flex-1">
-              <h3 className="text-2xl font-bold text-slate-200 group-hover:text-white transition-colors mb-2">
-                The Future of SNAP: Technology, Policy, and Propel's Potential
+        {/* Featured Content */}
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
+          <Link
+            href="/snap/future"
+            className="block group relative bg-gradient-to-r from-purple-900/30 to-blue-900/30 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-6 transition-all duration-300 hover:border-purple-400/50 hover:shadow-lg hover:shadow-purple-500/20"
+          >
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="relative">
+              <span className="text-4xl mb-3 block">🔮</span>
+              <h3 className="text-xl font-bold text-slate-200 group-hover:text-white transition-colors mb-2">
+                The Future of SNAP
               </h3>
-              <p className="text-slate-300 mb-3">
-                A 2800-word analysis predicting how mobile apps like Propel could transform SNAP from "benefit delivery system" 
-                to "accessible infrastructure"—and what it would take to close the 5-million-person participation gap.
+              <p className="text-slate-300 text-sm mb-3">
+                2800-word analysis predicting how technology could transform SNAP administration and close the participation gap.
               </p>
-              <div className="flex items-center gap-2 text-purple-400 font-semibold group-hover:gap-3 transition-all">
-                <span>Read the full essay</span>
+              <div className="flex items-center gap-2 text-purple-400 font-semibold group-hover:gap-3 transition-all text-sm">
+                <span>Read essay</span>
                 <span>→</span>
               </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+
+          <Link
+            href="/snap/research-roadmap"
+            className="block group relative bg-gradient-to-r from-emerald-900/30 to-cyan-900/30 backdrop-blur-sm border border-emerald-500/30 rounded-2xl p-6 transition-all duration-300 hover:border-emerald-400/50 hover:shadow-lg hover:shadow-emerald-500/20"
+          >
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="relative">
+              <span className="text-4xl mb-3 block">🗺️</span>
+              <h3 className="text-xl font-bold text-slate-200 group-hover:text-white transition-colors mb-2">
+                Research Roadmap
+              </h3>
+              <p className="text-slate-300 text-sm mb-3">
+                Multi-year research agenda with 100+ questions across 5 domains to understand autonomous benefit administration.
+              </p>
+              <div className="flex items-center gap-2 text-emerald-400 font-semibold group-hover:gap-3 transition-all text-sm">
+                <span>Explore roadmap</span>
+                <span>→</span>
+              </div>
+            </div>
+          </Link>
+        </div>
 
         {/* Key Insights */}
         <div className="grid md:grid-cols-3 gap-4 mb-8">
