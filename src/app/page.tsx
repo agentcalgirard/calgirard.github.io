@@ -142,14 +142,14 @@ export default function Home() {
             {/* Book Reviews Grid - 3D Covers with Video Hover */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { slug: 'seeing-like-a-state', title: 'Seeing Like a State', author: 'Scott', year: '1998', hasVideo: false },
-                { slug: 'administrative-burden', title: 'Administrative Burden', author: 'Herd & Moynihan', year: '2018', hasVideo: false },
-                { slug: 'fiscalization-of-social-policy', title: 'Fiscalization of Social Policy', author: 'McCabe', year: '2018', hasVideo: false },
-                { slug: 'why-snap-works', title: 'Why SNAP Works', author: 'Bosso', year: '2023', hasVideo: false },
-                { slug: 'fragmented-democracy', title: 'Fragmented Democracy', author: 'Michener', year: '2018', hasVideo: false },
+                { slug: 'seeing-like-a-state', title: 'Seeing Like a State', author: 'Scott', year: '1998', hasVideo: true },
+                { slug: 'administrative-burden', title: 'Administrative Burden', author: 'Herd & Moynihan', year: '2018', hasVideo: true },
+                { slug: 'fiscalization-of-social-policy', title: 'Fiscalization of Social Policy', author: 'McCabe', year: '2018', hasVideo: true },
+                { slug: 'why-snap-works', title: 'Why SNAP Works', author: 'Bosso', year: '2023', hasVideo: true },
+                { slug: 'fragmented-democracy', title: 'Fragmented Democracy', author: 'Michener', year: '2018', hasVideo: true },
                 { slug: 'how-the-other-half-banks', title: 'How the Other Half Banks', author: 'Baradaran', year: '2015', hasVideo: true },
-                { slug: 'recoding-america', title: 'Recoding America', author: 'Pahlka', year: '2023', hasVideo: false },
-                { slug: 'theres-always-this-year', title: "There's Always This Year", author: 'Abdurraqib', year: '2024', hasVideo: false },
+                { slug: 'recoding-america', title: 'Recoding America', author: 'Pahlka', year: '2023', hasVideo: true },
+                { slug: 'theres-always-this-year', title: "There's Always This Year", author: 'Abdurraqib', year: '2024', hasVideo: true },
               ].map((book) => (
                 <a
                   key={book.slug}
