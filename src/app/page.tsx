@@ -139,120 +139,39 @@ export default function Home() {
               </div>
             </a>
 
-            {/* Book Reviews Grid */}
-            <div className="grid md:grid-cols-3 gap-3">
-              <a
-                href="/calgirard.github.io/reading/seeing-like-a-state"
-                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-amber-500/50 hover:shadow-lg hover:shadow-amber-500/10"
-              >
-                <div className="flex items-start gap-2">
-                  <span className="text-xl">🗺️</span>
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-amber-400 transition-colors mb-1">
-                      Seeing Like a State
-                    </h3>
-                    <p className="text-xs text-slate-500">Scott (1998)</p>
+            {/* Book Reviews Grid - 3D Covers */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { slug: 'seeing-like-a-state', title: 'Seeing Like a State', author: 'Scott', year: '1998', color: 'emerald' },
+                { slug: 'administrative-burden', title: 'Administrative Burden', author: 'Herd & Moynihan', year: '2018', color: 'red' },
+                { slug: 'fiscalization-of-social-policy', title: 'Fiscalization of Social Policy', author: 'McCabe', year: '2018', color: 'blue' },
+                { slug: 'why-snap-works', title: 'Why SNAP Works', author: 'Bosso', year: '2023', color: 'orange' },
+                { slug: 'fragmented-democracy', title: 'Fragmented Democracy', author: 'Michener', year: '2018', color: 'violet' },
+                { slug: 'how-the-other-half-banks', title: 'How the Other Half Banks', author: 'Baradaran', year: '2015', color: 'green' },
+                { slug: 'recoding-america', title: 'Recoding America', author: 'Pahlka', year: '2023', color: 'cyan' },
+                { slug: 'theres-always-this-year', title: "There's Always This Year", author: 'Abdurraqib', year: '2024', color: 'amber' },
+              ].map((book) => (
+                <a
+                  key={book.slug}
+                  href={`/calgirard.github.io/reading/${book.slug}`}
+                  className="group block transition-all duration-300 hover:-translate-y-2"
+                >
+                  <div className="relative aspect-square rounded-xl overflow-hidden bg-slate-900 border border-slate-800 group-hover:border-slate-600 group-hover:shadow-xl group-hover:shadow-slate-900/50 transition-all">
+                    <img
+                      src={`/calgirard.github.io/images/books/${book.slug}.png`}
+                      alt={book.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80" />
+                    <div className="absolute bottom-0 left-0 right-0 p-3">
+                      <h3 className="text-xs font-semibold text-white leading-tight mb-0.5 line-clamp-2">
+                        {book.title}
+                      </h3>
+                      <p className="text-[10px] text-slate-400">{book.author} ({book.year})</p>
+                    </div>
                   </div>
-                </div>
-              </a>
-              <a
-                href="/calgirard.github.io/reading/administrative-burden"
-                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/10"
-              >
-                <div className="flex items-start gap-2">
-                  <span className="text-xl">📚</span>
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-purple-400 transition-colors mb-1">
-                      Administrative Burden
-                    </h3>
-                    <p className="text-xs text-slate-500">Herd & Moynihan (2018)</p>
-                  </div>
-                </div>
-              </a>
-              <a
-                href="/calgirard.github.io/reading/fiscalization-of-social-policy"
-                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-rose-500/50 hover:shadow-lg hover:shadow-rose-500/10"
-              >
-                <div className="flex items-start gap-2">
-                  <span className="text-xl">💰</span>
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-rose-400 transition-colors mb-1">
-                      Fiscalization of Social Policy
-                    </h3>
-                    <p className="text-xs text-slate-500">McCabe (2018)</p>
-                  </div>
-                </div>
-              </a>
-              <a
-                href="/calgirard.github.io/reading/why-snap-works"
-                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-orange-500/50 hover:shadow-lg hover:shadow-orange-500/10"
-              >
-                <div className="flex items-start gap-2">
-                  <span className="text-xl">🍎</span>
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-orange-400 transition-colors mb-1">
-                      Why SNAP Works
-                    </h3>
-                    <p className="text-xs text-slate-500">Bosso (2023)</p>
-                  </div>
-                </div>
-              </a>
-              <a
-                href="/calgirard.github.io/reading/fragmented-democracy"
-                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-violet-500/50 hover:shadow-lg hover:shadow-violet-500/10"
-              >
-                <div className="flex items-start gap-2">
-                  <span className="text-xl">🗳️</span>
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-violet-400 transition-colors mb-1">
-                      Fragmented Democracy
-                    </h3>
-                    <p className="text-xs text-slate-500">Michener (2018)</p>
-                  </div>
-                </div>
-              </a>
-              <a
-                href="/calgirard.github.io/reading/how-the-other-half-banks"
-                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-green-500/50 hover:shadow-lg hover:shadow-green-500/10"
-              >
-                <div className="flex items-start gap-2">
-                  <span className="text-xl">🏦</span>
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-green-400 transition-colors mb-1">
-                      How the Other Half Banks
-                    </h3>
-                    <p className="text-xs text-slate-500">Baradaran (2015)</p>
-                  </div>
-                </div>
-              </a>
-              <a
-                href="/calgirard.github.io/reading/recoding-america"
-                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/10"
-              >
-                <div className="flex items-start gap-2">
-                  <span className="text-xl">💻</span>
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-cyan-400 transition-colors mb-1">
-                      Recoding America
-                    </h3>
-                    <p className="text-xs text-slate-500">Pahlka (2023)</p>
-                  </div>
-                </div>
-              </a>
-              <a
-                href="/calgirard.github.io/reading/theres-always-this-year"
-                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-orange-500/50 hover:shadow-lg hover:shadow-orange-500/10"
-              >
-                <div className="flex items-start gap-2">
-                  <span className="text-xl">🏀</span>
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-orange-400 transition-colors mb-1">
-                      There's Always This Year
-                    </h3>
-                    <p className="text-xs text-slate-500">Abdurraqib (2024)</p>
-                  </div>
-                </div>
-              </a>
+                </a>
+              ))}
             </div>
           </div>
 
