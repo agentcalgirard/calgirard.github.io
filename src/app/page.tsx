@@ -239,6 +239,20 @@ export default function Home() {
                   </div>
                 </div>
               </a>
+              <a
+                href="/calgirard.github.io/reading/theres-always-this-year"
+                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-4 transition-all duration-300 hover:border-orange-500/50 hover:shadow-lg hover:shadow-orange-500/10"
+              >
+                <div className="flex items-start gap-2">
+                  <span className="text-xl">🏀</span>
+                  <div className="flex-1">
+                    <h3 className="text-sm font-semibold text-slate-200 group-hover:text-orange-400 transition-colors mb-1">
+                      There's Always This Year
+                    </h3>
+                    <p className="text-xs text-slate-500">Abdurraqib (2024)</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
 
