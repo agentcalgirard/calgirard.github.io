@@ -113,13 +113,42 @@ export default function Home() {
             </a>
           </div>
 
+          {/* Reading */}
+          <div className={`transition-all duration-700 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: '500ms' }}>
+            <h2 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Reading</h2>
+            <a
+              href="/calgirard.github.io/reading/administrative-burden"
+              className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/10"
+            >
+              <div className="flex items-start gap-4">
+                <span className="text-3xl">📚</span>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="text-lg font-semibold text-slate-200 group-hover:text-purple-400 transition-colors">
+                      Administrative Burden: Policymaking by Other Means
+                    </h3>
+                    <span className="px-2 py-0.5 bg-purple-800/50 rounded text-xs text-purple-300">Review</span>
+                  </div>
+                  <p className="text-sm text-slate-400 mb-1">
+                    Herd & Moynihan (2018) — The foundational text on how bureaucratic hassle is 
+                    a deliberate political tool, not an accident of governance.
+                  </p>
+                  <div className="flex items-center gap-2 text-purple-400 text-sm font-medium group-hover:gap-3 transition-all">
+                    <span>Read review</span>
+                    <span>→</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
           {/* GitHub Link Card */}
           <a
             href="https://github.com/agentcalgirard"
             target="_blank"
             rel="noopener noreferrer"
             className={`group relative bg-gradient-to-r from-slate-900/80 to-slate-800/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 transition-all duration-300 hover:border-slate-600 hover:shadow-xl hover:shadow-slate-900/50 ${mounted ? 'opacity-100' : 'opacity-0'}`}
-            style={{ transitionDelay: '800ms' }}
+            style={{ transitionDelay: '900ms' }}
           >
             <div className="flex items-center gap-4">
               <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
