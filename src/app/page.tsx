@@ -32,10 +32,39 @@ export default function Home() {
             </p>
           </div>
 
+          {/* SNAP Expert Feature */}
+          <a
+            href="/snap"
+            className={`group relative bg-gradient-to-r from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/30 rounded-2xl p-6 transition-all duration-300 hover:border-blue-400/50 hover:shadow-lg hover:shadow-blue-500/20 ${mounted ? 'opacity-100' : 'opacity-0'}`}
+            style={{ transitionDelay: '200ms' }}
+          >
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="relative flex items-start gap-4">
+              <span className="text-5xl">📊</span>
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-slate-200 group-hover:text-white transition-colors mb-2">
+                  SNAP Expert
+                </h3>
+                <p className="text-slate-300 mb-3">
+                  Deep expertise in Supplemental Nutrition Assistance Program policy, state options, and program administration.
+                </p>
+                <div className="flex flex-wrap gap-2 text-sm">
+                  <span className="px-3 py-1 bg-blue-800/50 rounded-full text-blue-300">State Participation Rates</span>
+                  <span className="px-3 py-1 bg-purple-800/50 rounded-full text-purple-300">Payment Error Analysis</span>
+                  <span className="px-3 py-1 bg-cyan-800/50 rounded-full text-cyan-300">28 State Options</span>
+                </div>
+                <div className="mt-4 flex items-center gap-2 text-emerald-400 font-semibold group-hover:gap-3 transition-all">
+                  <span>Explore SNAP Data Tool</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
           {/* Demo Day CTA */}
           <div 
             className={`group relative bg-gradient-to-r from-emerald-900/30 to-cyan-900/30 backdrop-blur-sm border border-emerald-500/30 rounded-2xl p-6 transition-all duration-300 hover:border-emerald-400/50 hover:shadow-lg hover:shadow-emerald-500/20 cursor-pointer ${mounted ? 'opacity-100' : 'opacity-0'}`}
-            style={{ transitionDelay: '200ms' }}
+            style={{ transitionDelay: '300ms' }}
             onClick={() => setShowDemoDay(true)}
           >
             <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -65,7 +94,7 @@ export default function Home() {
               <div
                 key={i}
                 className={`group relative bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:border-emerald-500/50 hover:shadow-lg hover:shadow-emerald-500/10 hover:-translate-y-1 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
-                style={{ transitionDelay: `${(i + 3) * 100}ms` }}
+                style={{ transitionDelay: `${(i + 4) * 100}ms` }}
               >
                 <div className="flex items-start gap-4">
                   <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
@@ -90,7 +119,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
             className={`group relative bg-gradient-to-r from-slate-900/80 to-slate-800/80 backdrop-blur-sm border border-slate-700 rounded-2xl p-6 transition-all duration-300 hover:border-slate-600 hover:shadow-xl hover:shadow-slate-900/50 ${mounted ? 'opacity-100' : 'opacity-0'}`}
-            style={{ transitionDelay: '700ms' }}
+            style={{ transitionDelay: '800ms' }}
           >
             <div className="flex items-center gap-4">
               <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
@@ -111,7 +140,7 @@ export default function Home() {
           </a>
 
           {/* Footer */}
-          <div className={`flex flex-col gap-3 pt-8 border-t border-slate-800 transition-all duration-700 ${mounted ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '800ms' }}>
+          <div className={`flex flex-col gap-3 pt-8 border-t border-slate-800 transition-all duration-700 ${mounted ? 'opacity-100' : 'opacity-0'}`} style={{ transitionDelay: '900ms' }}>
             <p className="text-sm text-slate-400">
               Powered by{" "}
               <a 
