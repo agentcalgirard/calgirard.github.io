@@ -116,7 +116,7 @@ export default function Home() {
           {/* Reading */}
           <div className={`transition-all duration-700 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: '500ms' }}>
             <h2 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Reading</h2>
-            <div className="grid md:grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-2 gap-4">
               <a
                 href="/calgirard.github.io/reading/seeing-like-a-state"
                 className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-5 transition-all duration-300 hover:border-amber-500/50 hover:shadow-lg hover:shadow-amber-500/10"
@@ -147,6 +147,23 @@ export default function Home() {
                     <p className="text-xs text-slate-500 mb-2">Herd & Moynihan (2018)</p>
                     <p className="text-sm text-slate-400">
                       How bureaucratic hassle is a political tool.
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="/calgirard.github.io/reading/fiscalization-of-social-policy"
+                className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-5 transition-all duration-300 hover:border-rose-500/50 hover:shadow-lg hover:shadow-rose-500/10"
+              >
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">💰</span>
+                  <div className="flex-1">
+                    <h3 className="text-base font-semibold text-slate-200 group-hover:text-rose-400 transition-colors mb-1">
+                      Fiscalization of Social Policy
+                    </h3>
+                    <p className="text-xs text-slate-500 mb-2">McCabe (2018)</p>
+                    <p className="text-sm text-slate-400">
+                      Why tax credits exclude the poorest families.
                     </p>
                   </div>
                 </div>
