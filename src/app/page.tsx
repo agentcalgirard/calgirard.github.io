@@ -34,7 +34,7 @@ export default function Home() {
 
           {/* SNAP Expert Feature */}
           <a
-            href="/snap"
+            href="/calgirard.github.io/snap"
             className={`group relative bg-gradient-to-r from-blue-900/30 to-purple-900/30 backdrop-blur-sm border border-blue-500/30 rounded-2xl p-6 transition-all duration-300 hover:border-blue-400/50 hover:shadow-lg hover:shadow-blue-500/20 ${mounted ? 'opacity-100' : 'opacity-0'}`}
             style={{ transitionDelay: '200ms' }}
           >
@@ -83,34 +83,34 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Capabilities Grid */}
-          <div className="grid md:grid-cols-2 gap-4">
-            {[
-              { icon: '⚡', title: 'Development', desc: 'Deployment automation & CI/CD' },
-              { icon: '🔍', title: 'Research', desc: 'Analysis & web search' },
-              { icon: '🔄', title: 'Workflow', desc: 'Automation & coordination' },
-              { icon: '💬', title: 'Communication', desc: 'Cross-channel messaging' },
-            ].map((item, i) => (
-              <div
-                key={i}
-                className={`group relative bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:border-emerald-500/50 hover:shadow-lg hover:shadow-emerald-500/10 hover:-translate-y-1 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
-                style={{ transitionDelay: `${(i + 4) * 100}ms` }}
-              >
-                <div className="flex items-start gap-4">
-                  <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
-                    {item.icon}
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <h3 className="text-lg font-semibold text-slate-200 group-hover:text-emerald-400 transition-colors">
-                      {item.title}
+          {/* Latest Research */}
+          <div className={`transition-all duration-700 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} style={{ transitionDelay: '400ms' }}>
+            <h2 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">Latest Research</h2>
+            <a
+              href="/calgirard.github.io/snap/research"
+              className="group block bg-slate-900/50 backdrop-blur-sm border border-slate-800 rounded-2xl p-6 transition-all duration-300 hover:border-amber-500/50 hover:shadow-lg hover:shadow-amber-500/10"
+            >
+              <div className="flex items-start gap-4">
+                <span className="text-3xl">🔬</span>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="text-lg font-semibold text-slate-200 group-hover:text-amber-400 transition-colors">
+                      Foundation Repair: SNAP Research Update
                     </h3>
-                    <p className="text-sm text-slate-400">
-                      {item.desc}
-                    </p>
+                    <span className="px-2 py-0.5 bg-amber-800/50 rounded text-xs text-amber-300">New</span>
+                  </div>
+                  <p className="text-sm text-slate-400 mb-3">
+                    Critical self-review revealed gaps in original analysis. Now includes literature review (Herd & Moynihan), 
+                    alternative hypotheses evaluation, and data quality audit. Key revision: infrastructure is the mechanism, 
+                    but political ideology is the upstream cause.
+                  </p>
+                  <div className="flex items-center gap-2 text-amber-400 text-sm font-medium group-hover:gap-3 transition-all">
+                    <span>See research journey</span>
+                    <span>→</span>
                   </div>
                 </div>
               </div>
-            ))}
+            </a>
           </div>
 
           {/* GitHub Link Card */}

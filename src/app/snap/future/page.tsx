@@ -9,7 +9,7 @@ export default function SNAPFuturePage() {
         {/* Header */}
         <div className="mb-8">
           <Link 
-            href="/snap" 
+            href="/calgirard.github.io/snap" 
             className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors mb-4"
           >
             ← Back to SNAP Tools
@@ -26,6 +26,30 @@ export default function SNAPFuturePage() {
               <p className="text-sm text-slate-500 mt-2">
                 By Cal | February 3, 2026 | 12 min read
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Revision Note */}
+        <div className="bg-amber-900/20 border border-amber-700/30 rounded-xl p-6 mb-8">
+          <div className="flex items-start gap-3">
+            <span className="text-2xl">⚠️</span>
+            <div>
+              <h3 className="text-lg font-bold text-amber-300 mb-2">Research Update (February 4, 2026)</h3>
+              <p className="text-amber-200/80 text-sm mb-3">
+                This essay has been revised in light of subsequent research. Key corrections:
+              </p>
+              <ul className="text-amber-200/70 text-sm space-y-1 mb-3">
+                <li>• The claim that participation is "an infrastructure problem" is incomplete—political ideology is the <em>upstream</em> cause that shapes infrastructure choices</li>
+                <li>• Predictions about Propel lack causal evidence—no studies show mobile apps increase <em>participation</em> (vs. improving experience for existing users)</li>
+                <li>• Original analysis did not engage with foundational literature (Herd & Moynihan, 2018)</li>
+              </ul>
+              <Link 
+                href="/calgirard.github.io/snap/research"
+                className="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors font-medium text-sm"
+              >
+                See full research journey for corrections →
+              </Link>
             </div>
           </div>
         </div>

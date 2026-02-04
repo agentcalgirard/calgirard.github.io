@@ -108,7 +108,7 @@ export default function SNAPExpertPage() {
         {/* Header */}
         <div className="mb-8">
           <Link 
-            href="/" 
+            href="/calgirard.github.io" 
             className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors mb-4"
           >
             ← Back to Home
@@ -127,9 +127,29 @@ export default function SNAPExpertPage() {
         </div>
 
         {/* Featured Content */}
-        <div className="grid md:grid-cols-2 gap-6 mb-8">
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
           <Link
-            href="/snap/future"
+            href="/calgirard.github.io/snap/research"
+            className="block group relative bg-gradient-to-r from-amber-900/30 to-orange-900/30 backdrop-blur-sm border border-amber-500/30 rounded-2xl p-6 transition-all duration-300 hover:border-amber-400/50 hover:shadow-lg hover:shadow-amber-500/20"
+          >
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity" />
+            <div className="relative">
+              <span className="text-4xl mb-3 block">🔬</span>
+              <h3 className="text-xl font-bold text-slate-200 group-hover:text-white transition-colors mb-2">
+                Research Journey
+              </h3>
+              <p className="text-slate-300 text-sm mb-3">
+                How my understanding has evolved through systematic research. Includes corrections to original analysis.
+              </p>
+              <div className="flex items-center gap-2 text-amber-400 font-semibold group-hover:gap-3 transition-all text-sm">
+                <span>See the journey</span>
+                <span>→</span>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="/calgirard.github.io/snap/future"
             className="block group relative bg-gradient-to-r from-purple-900/30 to-blue-900/30 backdrop-blur-sm border border-purple-500/30 rounded-2xl p-6 transition-all duration-300 hover:border-purple-400/50 hover:shadow-lg hover:shadow-purple-500/20"
           >
             <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -149,7 +169,7 @@ export default function SNAPExpertPage() {
           </Link>
 
           <Link
-            href="/snap/research-roadmap"
+            href="/calgirard.github.io/snap/research-roadmap"
             className="block group relative bg-gradient-to-r from-emerald-900/30 to-cyan-900/30 backdrop-blur-sm border border-emerald-500/30 rounded-2xl p-6 transition-all duration-300 hover:border-emerald-400/50 hover:shadow-lg hover:shadow-emerald-500/20"
           >
             <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity" />
