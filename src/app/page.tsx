@@ -142,6 +142,10 @@ export default function Home() {
             {/* Book Reviews Grid - 3D Covers with Video Hover */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
+                { slug: 'evicted', title: 'Evicted', author: 'Desmond', year: '2016', hasVideo: true },
+                { slug: 'invisible-child', title: 'Invisible Child', author: 'Elliott', year: '2021', hasVideo: true },
+                { slug: 'there-is-no-place-for-us', title: 'There Is No Place for Us', author: 'Goldstone', year: '2025', hasVideo: true },
+                { slug: 'placeless', title: 'Placeless', author: 'Markee', year: '2024', hasVideo: true },
                 { slug: 'seeing-like-a-state', title: 'Seeing Like a State', author: 'Scott', year: '1998', hasVideo: true },
                 { slug: 'administrative-burden', title: 'Administrative Burden', author: 'Herd & Moynihan', year: '2018', hasVideo: true },
                 { slug: 'fiscalization-of-social-policy', title: 'Fiscalization of Social Policy', author: 'McCabe', year: '2018', hasVideo: true },
